@@ -59,7 +59,9 @@
         $form.mouseenter(expandfield).mouseleave(collapsefield);
         $input.focusout(collapsefield);
         $input.keypress(function(event) {
-            $input.val().length > 0 ? $label.hide() : $label.fadeIn();
+            if (!hasPlaceholder) {
+                $input.val().length > 0 ? $label.hide() : $label.fadeIn();   
+            }
             if (event.which == 13) {
                 options.fn($input.val());
             }
