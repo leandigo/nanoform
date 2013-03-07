@@ -56,13 +56,10 @@
 
 .nanoform-input {
     text-align: left;
-    width: 7.5em;
+    width: 10em;
     border: 1px solid #189e09;
     border-radius: 0.3em 0 0 0.3em;
-    padding-left: 0.5em;
-    padding-right: 3em;
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 0 0.5em;
     color: #aaa;
 }
 
@@ -106,11 +103,6 @@
     .nanoform {
         font-size: 1.2em;
     }
-    
-    .nanoform-input {
-        width: 10em;
-        padding-right: 0.5em;
-    }
 }
 
 /******** Old Browser Support ********/
@@ -124,5 +116,5 @@
 }
 
 .lt-ie8 .nanoform-submit {
-    padding: 0.81em 0 0.82em;
+    padding: 0.78em 0 0.79em;
 }
