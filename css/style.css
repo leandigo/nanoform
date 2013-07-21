@@ -1,0 +1,26 @@
+#contact-desc {
+    position:           absolute;
+    top:                30%;
+    left:               33%;
+    font:               1.5em sans-serif;
+    color:              #444;
+}
+
+#contact-container {
+    position:   absolute;
+    top:        30%;
+    left:       38%;
+}
+
+#footer {
+    text-decoration:    none;
+    font:               1.2em sans-serif;
+    color:              #888;
+    position:           absolute;
+    bottom:             1em;
+    right:              1em;
+}
+
+#footer:hover {
+    text-decoration:    underline;
+}
