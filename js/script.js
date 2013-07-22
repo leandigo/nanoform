@@ -5,7 +5,7 @@ function submitEmail(val) {
         var thank = document.createElement('div');
         thank.id = 'thanks';
         thank.style.cssText = 'margin-top: 2em; font: 1.4em sans-serif; color: green;';
-        thank.innerText = 'Thank You!';
+        thank.innerText = 'Thank You! We will let you know.';
 
         $('#contact-container').append(thank);
         setTimeout(function() {

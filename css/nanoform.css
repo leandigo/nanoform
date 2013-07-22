@@ -68,8 +68,8 @@
 .nanoform-input {
     text-align:     left;
     width:          10em;
-    min-height:             50pt;
-    max-height:             50pt;
+    min-height:     50pt;
+    max-height:     50pt;
     border:         1px solid #189e09;
     border-radius:  0.3em 0 0 0.3em;
     padding:        0 0.5em;

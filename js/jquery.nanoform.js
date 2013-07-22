@@ -27,32 +27,37 @@
 
 (function($) {
     $.fn.nanoform = function(options) {
-        // Detect if the browser support a placeholder for an input field
+        // Detect if the browser supports a placeholder for an input field
         var hasPlaceholder = 'placeholder' in document.createElement('input');
         
         if (hasPlaceholder) {
-            var $input   = $(document.createElement('input')).addClass('nanoform-input').addClass('nanoform-anim').attr('placeholder', options.placeholder)
-            ,   $submit  = $(document.createElement('div')).addClass('nanoform-submit').html(options.submit_html)
-            ,   $overlay = $(document.createElement('div')).addClass('nanoform-overlay').addClass('nanoform-anim').html(options.overlay_html)
-            ,   $form    = this.append([$input, $submit, $overlay]).addClass('nanoform')
-            ,   ovl_w    = $overlay.width()
-            ,   input_w  = $input.width()
-            ,   submit_l = $submit.css('left')
-            ,   to_w     = options.to_w
-            ,   to_l     = options.to_l
-            ;   
+                // Create an input element and with the requested placeholder string
+            var $input   = $(document.createElement('input')).addClass('nanoform-input nanoform-anim').attr('placeholder', options.placeholder),
+                // Create the submit element and append the requested HTML to it
+                $submit  = $(document.createElement('div')).addClass('nanoform-submit').html(options.submit_html),
+                // Create the form overlay element with the requested HTML
+                $overlay = $(document.createElement('div')).addClass('nanoform-overlay nanoform-anim').html(options.overlay_html),
+                // Append the input, submit and overlay elements to the nanoform applied element.
+                $form    = this.append([$input, $submit, $overlay]).addClass('nanoform'),
+                ovl_w    = $overlay.width(),
+                input_w  = $input.width(),
+                submit_l = $submit.css('left'),
+                // Width in input mode
+                to_w     = options.to_w,
+                // Left position in input mode
+                to_l     = options.to_l;
         } else {
-            var $input   = $(document.createElement('input')).attr('id', 'nanoform-input').addClass('nanoform-input').addClass('nanoform-anim')
-            ,   $label   = $(document.createElement('label')).attr('for', 'nanoform-input').addClass('nanoform-placeholder').html(options.placeholder)
-            ,   $submit  = $(document.createElement('div')).addClass('nanoform-submit').html(options.submit_html)
-            ,   $overlay = $(document.createElement('div')).addClass('nanoform-overlay').addClass('nanoform-anim').html(options.overlay_html)
-            ,   $form    = this.append([$input, $label, $submit, $overlay]).addClass('nanoform')
-            ,   ovl_w    = $overlay.width()
-            ,   input_w  = $input.width()
-            ,   submit_l = $submit.css('left')
-            ,   to_w     = options.to_w
-            ,   to_l     = options.to_l
-            ;
+            var $input   = $(document.createElement('input')).attr('id', 'nanoform-input').addClass('nanoform-input nanoform-anim'),
+                // Create a label element for browsers not support the placeholder attribute
+                $label   = $(document.createElement('label')).attr('for', 'nanoform-input').addClass('nanoform-placeholder').html(options.placeholder),
+                $submit  = $(document.createElement('div')).addClass('nanoform-submit').html(options.submit_html),
+                $overlay = $(document.createElement('div')).addClass('nanoform-overlay nanoform-anim').html(options.overlay_html),
+                $form    = this.append([$input, $label, $submit, $overlay]).addClass('nanoform'),
+                ovl_w    = $overlay.width(),
+                input_w  = $input.width(),
+                submit_l = $submit.css('left'),
+                to_w     = options.to_w,
+                to_l     = options.to_l;
         }
         
         $submit.click(function() { options.fn($input.val()); } );
