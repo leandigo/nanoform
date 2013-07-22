@@ -1,7 +1,8 @@
-A jQuery plugin to create beautiful one-field forms
-===================================================
+A jQuery extensions to create beautiful one-field forms
+=======================================================
 
-*nanoform* is a jQuery extension for creating beautiful one-field cross-browser forms. Perfect for landing pages email submit or features request submission.
+*nanoform* is a jQuery extension for creating beautiful one-field forms. Perfect for landing pages email submission.
+Looks and behaves exactly the same in all browsers (mobile and PC) including Internet Explorer 9, 8, 7 and even 6.
 
 The nanoform has 2 modes:
 
@@ -17,8 +18,6 @@ Requirements
 Usage
 -----
 `$('element').nanoform({fn: youSubmitFunction});`
-
-
 
 
 :``fn``: This is the only mandatory parameter. Indicates the function you want the form to execute upon clicking the submit button.
