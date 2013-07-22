@@ -19,6 +19,8 @@ Usage
 `$('element').nanoform({fn: youSubmitFunction});`
 
 
+
+
 :``fn``: This is the only mandatory parameter. Indicates the function you want the form to execute upon clicking the submit button.
 
 For more customization, the following optional parameters are available:
