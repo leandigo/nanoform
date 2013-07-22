@@ -18,6 +18,7 @@ Usage
 :``fn``: This is the only mandatory parameter. Indicates the function you want the form to execute upon clicking the submit button.
 
 For more customization, the following optional parameters are available:
+
 :``placeholder``: The string to be used as a placeholder while there's no input in the form.
 :``submit_html``: HTML code you'd like to be appended to the submit button. By default the button will be blank with no indications, so it's advised to use this parameter to indicate a string or a image to be appended to the submit button.
 :``overlay_html``: HTML code you'd like to be appended to the overlay element. As with `submit_html`, by default the overlay will be blank with no indications, so it's advised to use this parameter to indicate a string to be shown in Engage mode.
