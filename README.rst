@@ -1,8 +1,10 @@
 A jQuery plugin to create beautiful one-field forms
 ===================================================
 
-nanoform is a jQuery extension for creating beautiful one-field cross-browser forms. Perfect for landing pages email submit or features request submission.
+*nanoform* is a jQuery extension for creating beautiful one-field cross-browser forms. Perfect for landing pages email submit or features request submission.
+
 The nanoform has 2 modes:
+
 *Engage mode*   - Default mode, with the form overlay shown and calling to action. The form returns to this mode from the Input mode on `blur` if no input text was entered.
 *Input mode*    - Interactive mode for entering text and submitting. Triggered by hovering or clicking on the form in the Engage mode.
 
@@ -12,7 +14,7 @@ Requirements
 
 
 Usage
-~~~~~
+-----
 `$('element').nanoform({fn: youSubmitFunction});`
 
 :``fn``: This is the only mandatory parameter. Indicates the function you want the form to execute upon clicking the submit button.
