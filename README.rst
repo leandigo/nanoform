@@ -5,7 +5,8 @@ A jQuery plugin to create beautiful one-field forms
 
 The nanoform has 2 modes:
 
-*Engage mode*   - Default mode, with the form overlay shown and calling to action. The form returns to this mode from the Input mode on `blur` if no input text was entered.
+*Engage mode*   - Default mode, with the form overlay shown and calling to action. The form returns to this mode from the Input mode on **blur** if no input text was entered.
+
 *Input mode*    - Interactive mode for entering text and submitting. Triggered by hovering or clicking on the form in the Engage mode.
 
 Requirements
