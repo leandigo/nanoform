@@ -1,3 +1,12 @@
+#contact-title {
+    position:   absolute;
+    font:       2.5em Arial, sans-serif;
+    font-weight: bold;
+    top:        20%;
+    left:       33%;
+    color:      #037da5;
+}
+
 #contact-desc {
     position:           absolute;
     top:                30%;
@@ -8,7 +17,7 @@
 
 #contact-container {
     position:   absolute;
-    top:        30%;
+    top:        32%;
     left:       38%;
 }
 
