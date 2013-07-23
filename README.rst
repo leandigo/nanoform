@@ -51,6 +51,7 @@ This example uses the `elShaker <https://github.com/leandigo/elShaker/>`_ extens
 License
 -------
 Copyright (c) 2013, Leandigo (|leandigo|_)
+
 Released under the MIT License. See the LICENSE file for details.
 
 .. |leandigo| replace:: www.leandigo.com
