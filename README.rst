@@ -58,7 +58,7 @@ This example uses the `elShaker <https://github.com/leandigo/elShaker/>`_ extens
     });
 
 
-`DEMO <http://leandigo.com/nanoform/>`_
+`DEMO <http://leandigo.github.io/nanoform/>`_
 
 License
 -------
