@@ -1,0 +1,134 @@
+/*
+    NANOFORM - A jQuery plugin to create beautiful one-field forms
+    --------------------------------------------------------------
+    Copyright (C) 2013, Leandigo (www.leandigo.com)  
+    This code is released under the MIT License
+*/
+
+.nanoform {
+    position:       relative;
+    margin-top:     2em;
+    margin-left:    auto;
+    margin-right:   auto;
+    min-height:     50pt;
+    max-height:     50pt;
+    padding:        0;
+    font:           1.6em sans-serif;
+    color:          #fff;
+    max-width:      18em;
+}
+
+.nanoform-anim {
+    position:               absolute;
+    top:                    0;
+    left:                   0;
+    font-size:              1em;
+    line-height:            2.8em;
+    min-height:             50pt;
+    max-height:             50pt;
+    border:                 1px solid #189e09;
+    -webkit-border-radius:  0.3em;
+    -moz-border-radius:     0.3em;
+    border-radius:          0.3em;
+}
+
+.nanoform-submit {
+    position:               absolute;
+    top:                    0;
+    left:                   11em;
+    min-height:             50pt;
+    max-height:             50pt;
+    padding:                0 1em;
+    vertical-align:         middle;
+    border:                 1px solid #189e09;
+    -webkit-border-radius:  0.3em;
+    -moz-border-radius:     0.3em;
+    border-radius:          0 0.3em 0.3em 0;
+    background:             #9cce98; /* Old browsers */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9cce98', endColorstr='#4cbf67',GradientType=0 ); /* IE6-8 */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzljY2U5OCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM0Y2JmNjciIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #9cce98 0%, #4cbf67 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9cce98), color-stop(100%,#4cbf67)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #9cce98 0%,#4cbf67 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #9cce98 0%,#4cbf67 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #9cce98 0%,#4cbf67 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #9cce98 0%,#4cbf67 100%); /* W3C */
+
+    -webkit-user-select:    none;
+    -moz-user-select:       none;
+    -ms-user-select:        none;
+    user-select:            none;
+}
+
+.nanoform-submit:hover {
+    cursor: pointer;
+}
+
+.nanoform-input {
+    text-align:     left;
+    width:          10em;
+    min-height:     50pt;
+    max-height:     50pt;
+    border:         1px solid #189e09;
+    border-radius:  0.3em 0 0 0.3em;
+    padding:        0 0.5em;
+    margin:         0;
+    color:          #aaa;
+}
+
+.nanoform-placeholder {
+    display:    none;
+    position:   absolute;
+    top:        1.1em;
+    left:       -3em;
+    font-size:  1.28em;
+    color:      #aaa;
+    cursor:     text;
+}
+
+.nanoform-input:focus {
+    outline:    0;
+}
+
+.nanoform-overlay {
+    text-align: center;
+    width:      14em;
+    background: #9cce98; /* Old browsers */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9cce98', endColorstr='#4cbf67',GradientType=0 ); /* IE6-8 */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzljY2U5OCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM0Y2JmNjciIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #9cce98 0%, #4cbf67 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9cce98), color-stop(100%,#4cbf67)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #9cce98 0%,#4cbf67 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #9cce98 0%,#4cbf67 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #9cce98 0%,#4cbf67 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #9cce98 0%,#4cbf67 100%); /* W3C */
+
+    -webkit-user-select:    none;
+    -moz-user-select:       none;
+    -ms-user-select:        none;
+    user-select:            none;
+}
+
+/******** Cross Device Adaptation ********/
+/* Smartphones */
+@media only screen and (max-device-width : 480px) {
+    .nanoform {
+        font-size:  1.2em;
+    }
+}
+
+/******** Old Browser Support ********/
+/* Iinternet Explorer */
+.gte-ie9 .nanoform-overlay, .gte-ie9 .nanoform-submit {
+    filter: none;
+}
+
+.gte-ie9 .nanoform-submit {
+    font-size:  1.28em;
+}
+
+.lt-ie8 .nanoform-submit {
+    padding:    0.78em 0 0.79em;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gte IE 9]>     <html class="gte-ie9"> <![endif]-->
+
+<!--[if gt IE 8]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+    <head>
+        <title>nanoform - Beautiful one-field form</title>
+
+        <script src="js/jquery-1.10.2.min.js"></script>
+        <script src="js/jquery.nanoform.js"></script>
+        <script src="js/jquery.elshaker.js"></script>
+        <script src="js/script.js"></script>
+
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/jquery.nanoform.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="contact-title">NANOFORM</div>
+        <div id="contact-desc">A jQuery plugin to create beautiful one-field forms</div>
+        <div id="contact-container">
+            <div id="contact"></div>
+        </div>
+
+        <a id="footer" href="http://www.leandigo.com" target="_blank">&copy;2013 Leandigo</a>
+
+        <script>
+            $('#contact').nanoform({
+                fn:   submitEmail,
+                to_w: '7em',
+                to_l: '3.5em',
+                placeholder: 'Your email address',
+                overlay_html: 'Notify me when ready!',
+                submit_html: '<img style="margin-top: 80%;" src="img/submit.png">'
+            });
+        </script>
+    </body>
+</html>
