@@ -68,3 +68,7 @@ Released under the MIT License. See the LICENSE file for details.
 
 .. |leandigo| replace:: www.leandigo.com
 .. _leandigo: http://www.leandigo.com
+
+.. figure:: https://cruel-carlota.pagodabox.com/3c5cf003f1b437c8507d9e707753ceae
+   :alt: Githalytics
+   :target: http://githalytics.com/leandigo/nanoform
